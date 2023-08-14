@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria</title>
+    <link rel="stylesheet" href="D:\ВКР\Euphoria/css/reset.css">
+    <link rel="stylesheet" href="D:\ВКР\Euphoria/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo-link">
+                        <img src="./img/svg/Euphoria.svg" alt="Отличный отдых для каждого" class="logo_pic">
+                    </a>
+                </div>
+                <div class="nav header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#about" class="header_link">О нас</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#tarif" class="header_link">Бронирование</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#reviews" class="header_link">Отзывы</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#contacts" class="header_link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- Секция с главной страницей -->
+        <section class="intro" id="intro">
+            <div class="wrapper">
+                <h1 class="intro_title">
+                    Отличный отдых для каждого
+                </h1>
+                <p class="subtitle">
+                    Отправляйтесь в путешествие к базе отдыха Euphoria и откройте для себя новый уровень релаксации и
+                    удовольствия
+                </p>
+                <button type="submit" class="intro_submit">Забронировать</button>
+                <div class="downmenu">
+                    <a href="#" id="changeleft" class="changeleft">
+                        <img src="./img/svg/left.svg" alt="">
+                    </a>
+                    <a href="#" id="changeright" class="changeright">
+                        <img src="./img/svg/right.svg" alt="">
+                    </a>
+                    <div class="social">
+                        <li class="media">
+                            <a href="/" class="inst">
+                                <img src="./img/svg/Instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="media">
+                            <a href="/" class="vk">
+                                <img src="./img/svg/vk.svg" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция о нас -->
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about_us">
+                    <div class="picture_one">
+                        <img src="./img/Rectangle4.png" alt="">
+                    </div>
+                    <div class="title_picture_two">
+                        <h2 class="about_title">
+                            О нас
+                        </h2>
+                        <p class="about_more1">
+                            База отдыха Euphoria была основана в 1995 году. Ее создание было вдохновлено желанием
+                            предоставить гостям возможность насладиться красотами природы и получить истинное
+                            удовольствие от отдыха.
+                        </p>
+                        <p class="about_more2">
+                            С первых дней своего существования база отдыха Euphoria стала популярным местом среди тех,
+                            кто искал спокойствие и умиротворение.
+                        </p>
+                        <div class="picture_two">
+                            <img src="./img/Rectangle127.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с тезисами -->
+
+        <section class="whyus" id="whyus">
+            <div class="wrapper">
+                <h2 class="why"> Почему мы </h2>
+                <div class="whyus_cards">
+                    <div class="whyus_card">
+                        <div class="whyus_cards-icon">
+                            <img src="./img/svg/sun-03.svg" alt="">
+                        </div>
+                        <h3 class="whyus_cards-title">
+                            Природа
+                        </h3>
+                        <p class="whyus_cards-desc">Мы расположены в красивом месте с горами и морем, что позволяет
+                            наслаждаться красотами природы</p>
+                    </div>
+                    <div class="whyus_card">
+                        <div class="whyus_cards-icon">
+                            <img src="./img/svg/umbrella.svg" alt="">
+                        </div>
+                        <h3 class="whyus_cards-title">
+                            Развлечения
+                        </h3>
+                        <p class="whyus_cards-desc"> В нашей базе отдыха есть широкий выбор развлечений и услуг, от
+                            бассейна и спа-центра до ресторана с вкусной едой</p>
+                    </div>
+                    <div class="whyus_card">
+                        <div class="whyus_cards-icon">
+                            <img src="./img/svg/iconoir_home-user.svg" alt="">
+                        </div>
+                        <h3 class="whyus_cards-title">
+                            Комфорт
+                        </h3>
+                        <p class="whyus_cards-desc">В базе отдыха Euphoria вы найдете комфортные номера, разные типы
+                            размещения и высокое качество услуг</p>
+                    </div>
+                    <div class="whyus_card">
+                        <div class="whyus_cards-icon">
+                            <img src="./img/svg/iconoir_settings-profiles.svg" alt="">
+                        </div>
+                        <h3 class="whyus_cards-title">
+                            Профессионализм
+                        </h3>
+                        <p class="whyus_cards-desc">Наша команда профессионалов стремится обеспечить высокое качество
+                            обслуживания, чтобы ваш отдых был идеальным</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с тарифами -->
+        <section class="tarifs" id="tarif">
+            <div class="wrapper">
+                <h2 class="tarifs_title">Стоимость номеров</h2>
+                <div class="tarifs_cards">
+                    <div class="tarifs_card">
+                        <h3 class="tarifs_cards-title">
+                            Эконом
+                        </h3>
+                        <div class="tarifs_cards-img">
+                            <img src="./img/eco.png" alt="">
+                        </div>
+                        <div class="tarifs_tesis">
+                            <ul class="tarifs_cards-desc">
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Двуспальная кровать</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Бассейн</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Wi-Fi</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Телевизор</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Игровые зоны</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="tarifs-price">2 000 ₽ / СУТКИ</h2>
+                        <div class="button_wrapper">
+                            <button type="submit" class="tarifs_submit">Оформить</button>
+                        </div>
+                    </div>
+                    <div class="tarifs_card">
+                        <h3 class="tarifs_cards-title">
+                            Стандарт
+                        </h3>
+                        <div class="tarifs_cards-img">
+                            <img src="./img/standart.png" alt="">
+                        </div>
+                        <div class="tarifs_tesis">
+                            <ul class="tarifs_cards-desc">
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Эконом</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Спа-зона</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Личное джакузи</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Пешая экскурсия</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Бесплатный завтрак</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="tarifs-price">3 500 ₽ / СУТКИ</h2>
+                        <div class="button_wrapper">
+                            <button type="submit" class="tarifs_submit">Оформить</button>
+                        </div>
+                    </div>
+                    <div class="tarifs_card">
+                        <h3 class="tarifs_cards-title">
+                            Люкс
+                        </h3>
+                        <div class="tarifs_cards-img">
+                            <img src="./img/lux.png" alt="">
+                        </div>
+                        <div class="tarifs_tesis">
+                            <ul class="tarifs_cards-desc">
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Стандарт</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Бесплатное питание</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Мини-бар</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Экскурсия на машинах</p>
+                                </li>
+                                <li class="tarifs_item">
+                                    <img src="./img/svg/Star.svg" alt="">
+                                    <p class="tarifs_item_desc">Номера люкс с видом на горы</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="tarifs-price">6 500 ₽ / СУТКИ</h2>
+                        <div class="button_wrapper">
+                            <button type="submit" class="tarifs_submit">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с услугами -->
+        <section class="services" id="services">
+            <div class="wrapper">
+                <div class="services_header">
+                    <h2 class="services_title">Наши услуги</h2>
+                    <div class="arrows">
+                        <a href="" class="services_left">
+                            <img src="./img/svg/lft.svg" alt="">
+                        </a>
+                        <a href="" class="services_right">
+                            <img src="./img/svg/rght.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="card">
+                            <img src="./img/spa.png" alt="">
+                            <div class="card-text">Спа салон</div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/pool.png" alt="">
+                            <div class="card-text">Бассейн</div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/rest.png" alt="">
+                            <div class="card-text">Ресторан</div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/play.png" alt="">
+                            <div class="card-text">Игровые площадки</div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/esc.png" alt="">
+                            <div class="card-text">Экскурсия</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с галереей -->
+        <section class="galery">
+            <div class="wrapper">
+                <h2 class="galery_title">Галерея</h2>
+                <div class="galery_content">
+                    <img src="./img/1.png" class="item1" alt="">
+                    <img src="./img/2.png" class="item2" alt="">
+                    <img src="./img/3.png" class="item3" alt="">
+                    <img src="./img/4.png" class="item4" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Секция с отзывами -->
+        <section class="reviews" id="reviews">
+            <div class="wrapper">
+                <div class="reviews_header">
+                    <h2 class="reviews_title">Отзывы наших клиентов</h2>
+                    <div class="arrows_r">
+                        <a href="/" class="services_left_r">
+                            <img src="./img/svg/lft.svg" alt="">
+                        </a>
+                        <a href="/" class="services_right_r">
+                            <img src="./img/svg/rght.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews_container">
+                    <div class="slider_reviews">
+                        <div class="review">
+                            <img src="./img/review.png" alt="">
+                            <div class="review-text">« Я был в Euphoria и могу сказать, что это был незабываемый отдых.
+                                Комфортабельные номера, прекрасный вид на горы и море, различные удобства, вкусная еда в
+                                ресторане, а главное - высокое качество обслуживания и услуг. Я точно вернусь сюда в
+                                следующий раз! »</div>
+                            <div class="people">
+                                <img src="./img/profile1.png" alt="" class="profile">
+                                <p class="name">Дмитрий Велов</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="./img/review.png" alt="">
+                            <div class="review-text">« Посетил Euphoria - незабываемое приключение! Уютные номера,
+                                прекрасный вид, разнообразные удобства и вкусная еда. Обслуживание на высшем уровне.
+                                Рекомендую всем! »</div>
+                            <div class="people">
+                                <img src="./img/profile2.png" alt="" class="profile">
+                                <p class="name">Олег Шиглов</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <img src="./img/review.png" alt="">
+                            <div class="review-text">« Мое пребывание в Euphoria было незабываемым! Номера были очень
+                                уютными, с потрясающим видом на горы и море. Ресторан предлагал отличную еду. Самое
+                                главное, что меня поразило, это качество обслуживания и услуг - на высшем уровне! »
+                            </div>
+                            <div class="people">
+                                <img src="./img/profile3.png" alt="" class="profile">
+                                <p class="name">Алиса Вольная</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с FAQ -->
+        <section class="faq">
+            <div class="wrapper">
+                <h2 class="faq_title">Часто задаваемые вопросы</h2>
+                <div class="faq_container">
+                    <div class="question">
+                        <h3 class="question_title">Как я могу забронировать номер в базе отдыха?</h3>
+                        <img src="./img/svg/Vector_down.svg" alt="">
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Вы можете забронировать номер через наш сайт или позвонить нам по телефону
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_container">
+                    <div class="question">
+                        <h3 class="question_title">Какие виды размещения доступны в базе отдыха?</h3>
+                        <img src="./img/svg/Vector_down.svg" alt="">
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Вы можете забронировать номер через наш сайт или позвонить нам по телефону
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_container">
+                    <div class="question">
+                        <h3 class="question_title">Есть ли у вас питание в базе отдыха? </h3>
+                        <img src="./img/svg/Vector_down.svg" alt="">
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Вы можете забронировать номер через наш сайт или позвонить нам по телефону
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_container">
+                    <div class="question">
+                        <h3 class="question_title">Можно ли приехать с домашними животными?</h3>
+                        <img src="./img/svg/Vector_down.svg" alt="">
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Вы можете забронировать номер через наш сайт или позвонить нам по телефону
+                        </p>
+                    </div>
+                </div>
+                <div class="faq_container">
+                    <div class="question">
+                        <h3 class="question_title">Есть ли у вас детская зона?</h3>
+                        <img src="./img/svg/Vector_down.svg" alt="">
+                    </div>
+                    <div class="answer">
+                        <p>
+                            Вы можете забронировать номер через наш сайт или позвонить нам по телефону
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с Контактами -->
+        <section class="contacts" id="contacts">
+            <div class="wrapper">
+                <div class="content-contacts">
+                    <div class="left-side">
+                        <h2>Наши контакты</h2>
+                        <div class="contact-info">
+                            <div class="info">
+                                <div class="address">
+                                    <img src="./img/svg/marker.svg" alt="">
+                                    <p>Адрес</p>
+                                </div>
+                                <figure>г. Саранск, Ленинский район,<br>ул. Пушкина, д.43</figure>
+                            </div>
+                            <div class="info">
+                                <div class="address">
+                                    <img src="./img/svg/calendar.svg" alt="">
+                                    <p>График работы</p>
+                                </div>
+                                <figure>Пн - Пт с 8:00 до 20:00</figure>
+                            </div>
+                            <div class="info">
+                                <div class="address">
+                                    <img src="./img/svg/phone.svg" alt="">
+                                    <p>Номер телефона</p>
+                                </div>
+                                <figure>+7 999 999 99-99</figure>
+                            </div>
+                            <div class="info">
+                                <div class="address">
+                                    <img src="./img/svg/mail-04.svg" alt="">
+                                    <p>Почта</p>
+                                </div>
+                                <figure>euphoria@gmail.com</figure>
+                            </div>
+                        </div>
+                        <img src="./img/map.png" alt="">
+                    </div>
+                    <div class="right-side">
+                        <img src="./img/contact.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция с обратной связью -->
+        <section class="feedback" id="feedback">
+            <div class="wrapper">
+                <div class="wrapper-feedback">
+                    <div class="left-img">
+                        <img src="/img/feedback.png" alt="">
+                    </div>
+                    <div class="right_info">
+                        <h2>Связаться с нами</h2>
+                        <form action="#" class="feedback_form">
+                            <fieldset class="feedback_wrap">
+                                <p class="feedback_form_info">
+                                    <input type="text" class="feedback_field" placeholder="Имя">
+                                    <span class="error-msg"></span>
+                                </p>
+                                <p class="feedback_form_info">
+                                    <input type="text" class="feedback_field phone_field" placeholder="Номер телефона">
+                                    <span class="error-msg"></span>
+                                </p>
+                            </fieldset>
+                            <label for="check" class="custom-checkbox">
+                                <input type="checkbox" id="check">
+                                <span class="checkmark"></span>
+                                <p> Согласен с обработкой <a href="https://kontur.ru/about/policy"> персональных
+                                        данных</a> </p>
+                            </label>
+                            <button type="submit" class="feedback_submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="wrapper">
+                <img src="./img/svg/Euphoria.svg" class="logo" alt="">
+                <div class="columns">
+                    <div class="column1">
+                        <p>©2023 Все права защищены</p>
+                        <p>Designed by Alexeich</p>
+                    </div>
+                    <div class="column2">
+                        <a href="#about">О нас</a>
+                        <a href="#services">Наши услуги</a>
+                        <a href="#whyus">Почему мы</a>
+                    </div>
+                    <div class="column3">
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#tarif">Бронирование</a>
+                        <a href="#contacts">Наши контакты</a>
+                    </div>
+                    <div class="column4">
+                        <p>+ 7 (999) 999 99-99</p>
+                        <a href="#intro">www.euphoria.com</a>
+                        <div class="img_footer">
+                            <a href=""><img src="./img/svg/Instagram.svg" alt=""></a>
+                            <a href=""><img src="./img/svg/vk.svg" alt=""></a>
+                        </div>
+
+                    </div>
+                    <div class="column5">
+                        <p>Россия, г. Саранск, Ленинский район,
+                            ул. Пушкина, д.43 </p>
+                        <a href="https://kontur.ru/about/policy">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
